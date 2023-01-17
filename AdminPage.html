@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+<html>
+<head>
+  <title>SignUp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'> 
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <style>
+    /* html{
+        background-color: burlywood;
+    } */
+    a{
+        margin: 0px 20px;
+    }
+    .SignUp{
+        margin-top: 5%;
+    }
+    .form-inline{
+            display: flex;
+        }
+        .form-inline .btn{
+            margin-left: 5px;
+        }
+        .insert-form .row{
+            display: block;
+            max-width: 200px;
+            /* / clear: left; /
+            / display: flex; / */
+        }
+        .insert-form .btn{
+            margin: 10px 5px;
+        }
+        div h3{
+            max-width: 200px;
+            /* / text-align: center; /
+            padding-left: 20px; */
+        }
+        .modal-body .inp{
+            margin: 5px 20px;
+            background: transparent;
+            border: none;
+            border-radius: 5px;
+
+        }
+        .modal-body .inp:focus{
+            outline: none;
+        }
+        .nav{
+            background-color: rgb(214, 47, 47);
+        }
+        .nav-item a{
+            background-color: rgb(61, 66, 93);
+            border-radius: 10px;
+            color: white;
+            transition: 0.3s;
+        }
+        .nav-item a:hover{
+            color: white;
+            font-size: 18px;
+        }
+        .nav-item{
+            margin-top: 5px;
+        }
+        .navbar{
+            font-size: 20px;
+            background-color: rgb(214, 47, 47);
+        }
+        .navbar-header a{
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .navbar-brand
+        {
+            color: black;  
+            letter-spacing: 2px;
+        }
+        .navbar-brand span1{
+            color: rgb(10, 10, 10);
+        }
+        .navbar-brand span2{
+            color: aliceblue;
+        }
+        .nav-link{
+            color: white;
+            width: 100%;   
+            transition: all 0.3s;
+        }
+        .nav-link:hover{
+            color: black;
+            font-size: 22px;
+        }
+        li{
+            width: 100%;
+            /* background-color: antiquewhite; */
+        }
+       #btnSearch{
+        color: black;
+        background-color: whitesmoke;
+        transition: all 0.3s;
+       }
+       #btnSearch:hover{
+        color: white;
+        background-color: black;
+        border: none;
+       }
+       .btn{
+        color: white;
+        background-color: black;
+        transition: all 0.3s;
+       }
+       .btn:hover{
+        color: white;
+        background-color: rgb(214, 47, 47);
+        padding: 8px 13px;
+        font-size: 18px;
+        transition: all 0.3s;
+       }
+ </style>
+</head>
+
+<body onload="UserPage.candAllDetails()">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span><br>
+                <span class="icon-bar"></span>
+                <!-- <span class="icon-bar"></span> -->
+            </button>
+            <a class="navbar-brand" href="#"><span1>JOB</span><span2>HANDLER</span></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <hr>
+            <ul class="nav navbar-nav">
+                <li><a class="nav-link" href="AdminPage.html">CANDIDATE'S DATA</a></li>
+                <li><a class="nav-link" href="AdminJobPage.html">JOB DETAILS</a></li>
+                <li><a class="nav-link" href="UserJobPage.html">APPLIED CANDIDATE'S</a></li>
+                <li><a class="nav-link" href="Shortlisted.html">SHORT-LISTED CANDIDATE'S</a></li>
+                <li><a class="nav-link" href="index.html">HOME</a></li>
+                <li><a class="nav-link" href="login.html">LOGOUT</a></li>
+            </ul>
+            <nav class="navbar">
+                <form class="form-inline">
+                  <input id="txtCustId" class="form-control mr-sm-2" type="search" placeholder="&#xf002; Search" aria-label="Search">
+                  <button id="btnSearch" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+                </form>
+              </nav>
+          </div>
+        </div>
+      </nav>
+
+    <section class="SignUp">
+        
+        <div>
+            <h2>Candidate Details</h2>
+            <button type="button" id="btnCust" class="btn" onclick="UserPage.candAllDetails()">All User Details</button>
+            <br />
+            <br />
+            <table class="table CustTable">
+                <tr>
+                    <th>Candidate ID</th>
+                    <th>Candidate Name</th>
+                </tr>
+            </table>
+        </div>
+
+
+        <div class="modal fade" id="ViewModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Candidate Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="border: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table>
+                            <tr>
+                                <td>User ID: </td>
+                                <td><input class="inp" type="text" id="ip-custId" placeholder="Auto Generated"></td>
+                            </tr>
+                            <tr>
+                                <td>Name: </td>
+                                <td><input type="text"  class="inp" id="ip-custName" ></td>
+                            </tr>
+                            <tr>
+                                <td>Email: </td>
+                                <td><input type="text"  class="inp" id="ip-custEmail" ></td>
+                            </tr>
+                            <tr>
+                                <td>Password: </td>
+                                <td><input type="text"  class="inp" id="ip-custPass" ></td>
+                            </tr>
+                            <tr>
+                                <td>User-Type: </td>
+                                <td><input type="text"  class="inp" id="ip-custUser_Type"></td>
+                            </tr>
+                            <tr>
+                                <td id="message" colspan="2" style="color: red"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+
+<script src="script/javascript/adminpage.js"></script>
+	
+</body>
+</html>
